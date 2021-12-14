@@ -30,6 +30,10 @@ app.post('/confirm', (req, res) => {
 })
 
 
-app.listen(process.env.PORT || 3000, (req, res) => {
-    console.log(`server is running on port ${process.env.PORT}`);
-})
+// app.listen(process.env.PORT || 3000, (req, res) => {
+//     console.log(`server is running on port ${process.env.PORT}`);
+// })
+const server = app.listen(process.env.PORT || 3000, () => {
+    const port = server.address().port;
+    console.log(`Express is working on port ${port}`);
+});
