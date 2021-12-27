@@ -19,13 +19,13 @@ const heslo = 'kkz';
 app.post('/signin', (req, res) => {
         const { input } = req.body;
         if (!input) {
-            res.status(400).json('the password is not filled in')
+            return res.status(400).json('the password is not filled in')
         }
         if (input === heslo) {
             // return res.json('heslo is ok') //funguje s i bez return
-            res.json('ok')
+            return res.json('ok')
         } else {
-            res.status(400).json('error loggin in')
+            return res.status(400).json('error loggin in')
         }
     })
     // app.post('/register', (req, res) => {
