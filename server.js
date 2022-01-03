@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
 
 const database = {
     users: [
-        { name: 'jan', email: 'jan@gmail.com', heslo: 'kkz' },
-        { name: 'jana', email: 'jana@gmail.com', heslo: 'jana' },
+        { followers_count: '1000000000000', statuses_count: '1000000000000', coefficient: '1000000' },
+        { user_name: 'binance', email: 'jana@gmail.com', heslo: 'jana' },
         { name: 'janek', email: 'janek@gmail.com', heslo: 'janek' }
     ]
 }
